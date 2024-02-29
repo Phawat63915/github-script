@@ -1,0 +1,2 @@
+$url = (Invoke-RestMethod -Uri "https://api.github.com/repos/jgm/pandoc/releases/latest").assets | Where-Object { $_.name -like "*amd64.deb" } | ForEach-Object { $_.browser_download_url }
+Invoke-WebRequest -Uri $url -OutFile $url.Split("/")[-1]

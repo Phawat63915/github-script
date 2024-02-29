@@ -1,0 +1,1 @@
+@"%OneDriveConsumer%\Tools\cmd_path\powershell\_pwsh.exe" -executionpolicy bypass -File %~n0.ps1
